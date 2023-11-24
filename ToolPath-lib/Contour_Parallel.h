@@ -11,4 +11,6 @@
 #include "Path.h"
 #include "Raster.h"
 
+Paths Contour_Parallel(const Path &contour, const Paths &holes, double distance);
+
 #endif //QT_EXAMPLE_PROJ_CONTOUR_PARALLEL_H

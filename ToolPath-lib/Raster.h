@@ -11,9 +11,9 @@
 #include <iostream>
 #include "Path.h"
 
-bool cmp_Raster(const IntPoint& a, const IntPoint& b);
+bool cmp_Raster(const IntPoint &a, const IntPoint &b);
 
-IntPaths Raster(const IntPath& contour, const IntPaths& holes, double distance, double scale);
+IntPaths Raster(const IntPath &contour, const IntPaths &holes, double distance, double scale);
 
 Paths Raster(const Path &contour, const Paths &holes, double distance);
 

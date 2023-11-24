@@ -11,8 +11,8 @@
 #include "Path.h"
 #include "Raster.h"
 
-IntPaths ZigZag(const IntPath& contour, const IntPaths& holes, double distance, double scale);
+IntPaths ZigZag(const IntPath &contour, const IntPaths &holes, double distance, double scale);
 
-Paths ZigZag(const Path& contour, const Paths& holes, double distance);
+Paths ZigZag(const Path &contour, const Paths &holes, double distance);
 
 #endif //QT_EXAMPLE_PROJ_ZIGZAG_H
