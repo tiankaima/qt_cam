@@ -2,16 +2,7 @@
 // Created by TianKai Ma on 2023/11/24.
 //
 
-#include <QPainterPath>
-#include <QApplication>
-#include <QMessageBox>
 #include "Widget.h"
-#include "QLabel"
-#include <iostream>
-#include <QRandomGenerator>
-#include <QMouseEvent>
-#include <QClipboard>
-#include <QPushButton>
 
 #define WINDOW_WIDTH 1200
 #define WINDOW_HEIGHT 800
@@ -73,15 +64,15 @@ void Widget::paintCanvas() {
 
     // print current point count on left top
     painter.drawText(50, 50, "Points: " + QString::number(points.size()));
-    painter.drawText(50, 65, "Control points: " + QString::number((points.size()  + 2)/ 3));
+    painter.drawText(50, 65, "Control points: " + QString::number((points.size() + 2) / 3));
 
 
     //    pointInfo->setFont(QFont("Monospace", 20));
     if (selectedPointIndex == -1) {
-        painter.drawText(50,750,"No point selected");
+        painter.drawText(50, 750, "No point selected");
     } else {
-        painter.drawText(50,750,"x: " + QString::number(points[selectedPointIndex].x()) + "\ny: " +
-                           QString::number(points[selectedPointIndex].y()));
+        painter.drawText(50, 750, "x: " + QString::number(points[selectedPointIndex].x()) + "\ny: " +
+                                  QString::number(points[selectedPointIndex].y()));
     }
 
 
@@ -212,7 +203,7 @@ void Widget::mousePressEvent(QMouseEvent *event) {
                     points.remove(i);
                     points.remove(i);
                     points.remove(i - 1);
-                } else if(i % 3 == 1) {
+                } else if (i % 3 == 1) {
                     points.remove(i);
                     points.remove(i - 1);
                     points.remove(i - 2);
@@ -263,7 +254,7 @@ QString Widget::dumpAsString() {
     // ...
 
     QString str;
-    for (auto point : points) {
+    for (auto point: points) {
         str += QString::number(point.x()) + " " + QString::number(point.y()) + "\n";
     }
     return str;

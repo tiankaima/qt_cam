@@ -5,8 +5,17 @@
 #ifndef QT_EXAMPLE_PROJ_WIDGET_H
 #define QT_EXAMPLE_PROJ_WIDGET_H
 
-#include <QWidget>
-#include <QPainter>
+#include "iostream"
+#include "QApplication"
+#include "QClipboard"
+#include "QLabel"
+#include "QPushButton"
+#include "QPainter"
+#include "QPainterPath"
+#include "QRandomGenerator"
+#include "QMessageBox"
+#include "QMouseEvent"
+#include "QWidget"
 
 class Widget : public QWidget {
 Q_OBJECT

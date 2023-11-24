@@ -1,8 +1,4 @@
-#include <QApplication>
-#include <QPushButton>
-#include <QMessageBox>
-#include <QPainter>
-#include <QRandomGenerator>
+#include "QApplication"
 #include "Widget.h"
 
 
